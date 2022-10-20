@@ -21,7 +21,7 @@
 
 
       <!-- HERO IMAGE -->
-      <div class="hero-image">
+      <div class="hero-image" id="home">
         <div class="hero-text">
           <h1>MVP Invent</h1>
           <p>Create your MVP</p>
@@ -31,7 +31,7 @@
 
         <!-- SERVICES -->
         <div>
-        <section>
+        <section id="services">
             <h3>Our Services</h3>
             <!-- <p class="section-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
             <div class="services-grid">
@@ -74,7 +74,7 @@
         </div>
 
         <!-- ABOUT -->
-        <div class="about-section">
+        <div class="about-section" id="about">
             <h1>About Us</h1>
             <p> MVP Invent assists entrepreneurs with the creation of their MVP, market and customer research, and the development of a technical foundation and IP protection. <br> 
                 Our firm also supports the nurturing of ideas at a later stage by making them presentable to an audience and investors. We think that ideas are being sown today,<br>
@@ -112,7 +112,7 @@
           
             <div class="column">
               <div class="card">
-                <img src="images/anshika.jfif" alt="Anshikaa" style="width:100%">
+                <img src="images/anshika.jfif" alt="Anshika" style="width:100%">
                 <div class="container">
                   <h2>Anshika</h2>
                   <p class="title">COO & Co-founder</p>
@@ -124,11 +124,11 @@
             </div>
           </div>
 
-          <!-- CONTACT US -->
+          <!-- CONTACT US --> 
 
-          <!-- <div class="container1">
+          <div class="container1" id="contact">
             <h2 style="text-align:center">CONTACT US</h2>
-            <form action="action_page.php">
+            <!-- <form action="action_page.php">
           
               <label for="fname">First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -148,16 +148,39 @@
           
               <input type="submit" value="Submit">
           
-            </form>
-          </div> -->
+            </form> -->
+            <form id='contactus' method='post'>
+              <fieldset>
+              <legend>Contact us</legend>
+              
+              <input type='hidden' name='submitted' id='submitted' value='1'/>
+              
+                  <label for='name' >Your Full Name*: </label>
+                  <input type='text' name='name' id='name'  maxlength="50" />
+              
+                  <label for='email' >Email Address*:</label>
+                  <input type='text' name='email' id='email' maxlength="50" />
+              
+                  <label for='phone' >Phone Number:</label>
+                  <input type='text' name='phone' id='phone' maxlength="15" /><br/>
+              
+                  <label for='message' >Message:</label>
+                  <input type="text" name='message' id='message' maxlength="500"><br/>
+                  <!-- <textarea rows="10" cols="50" name='message' id='message'> </textarea> -->
+              
+                  <input type='submit' name='Submit' value='Submit' />
+              
+              </fieldset>
+              </form>
+          </div>
           <div class="footer-basic">
             <footer>
                 <!-- <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div> -->
                 <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#">Home</a></li>
-                    <li class="list-inline-item"><a href="#">Services</a></li>
-                    <li class="list-inline-item"><a href="#">About</a></li>
-                    <li class="list-inline-item"><a href="#">Contact</a></li>
+                    <li class="list-inline-item"><a href="#home">Home</a></li>
+                    <li class="list-inline-item"><a href="#services">Services</a></li>
+                    <li class="list-inline-item"><a href="#about">About</a></li>
+                    <li class="list-inline-item"><a href="#contact">Contact</a></li>
                 </ul>
                 <p class="copyright">MVP Invent © 2022</p>
             </footer>
