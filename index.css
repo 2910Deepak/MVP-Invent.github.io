@@ -280,8 +280,8 @@ html {
     }
   }
 
-  /* input[type=text], select, textarea {
-    width: 100%; 
+  input[type=text], select, textarea {
+    width: 20%; 
     padding: 12px; 
     border: 1px solid #ccc; 
     border-radius: 4px; 
@@ -293,10 +293,11 @@ html {
   
   
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #04402a;
     color: white;
     padding: 12px 20px;
     border: none;
+    margin-left: 640px;
     border-radius: 4px;
     cursor: pointer;
   }
@@ -314,7 +315,7 @@ html {
     padding-left: 30px;
     width: 100%;
     
-  } */
+  }
 
   .footer-basic {
     padding:40px 0;
